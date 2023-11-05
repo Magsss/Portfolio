@@ -1,0 +1,469 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif; 
+}
+body{
+
+    background:url(BGM.jpg);
+    background-size: cover;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+a:hover{
+    color:red;
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+.nvgtnbr{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nvgtnbr .logo{
+    font-weight: bold;
+    color: #a30909;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.nvgtnbr .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nvgtnbr .link{
+    display: flex;
+    gap: 5rem;
+}
+.action{
+    background-color: rgb(206, 83, 83);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.action:hover{
+    scale: 1.05;
+    color:#fff
+}
+.action:active{
+    scale: 0.95;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0%;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding-bottom: 32vh;
+}
+.dropdown .open{
+    height: 240px;
+
+}
+.dropdown li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown .action{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section#rescon{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+section#rescon .content{
+    position: relative;
+    display: flex;
+    text-align: center;
+    right: 15%;
+    top: 0%;
+    height: auto;
+    width: auto;
+    animation: ltr 1.5s ease;
+}
+section#rescon h1{
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+section#rescon p{
+    position: absolute;
+    font-weight: bold;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+/* ED HTML------------------------------------------------------------------------------------------------------------ */
+.edrcon1{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+
+}
+.edrcon1 .bcp{
+    position: relative;
+    text-align: center;
+    right: 0%;
+    top: 0%;
+    animation: ltr 1.5s ease;
+    
+}
+.edrcon1 h1{
+    position: absolute;
+    font-weight: bold;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.edrcon1 p{
+    position: absolute;
+    font-weight: bold;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+.edrcon2{
+    height: calc(100vh - 60px);
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.edrcon2 .sccp{
+    position: relative;
+    text-align: center;
+    padding-bottom: 5px;
+    animation: ltr 1.5s ease;
+}
+.edrcon2 h1{
+    position: absolute;
+    font-weight: bold;
+    top: 175%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.edrcon2 p{
+    position: absolute;
+    font-weight: bold;
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+/* EXPERIENCE-------------------------------------------------------------------------------------------------------------------------*/
+
+section#expcon{
+    height: calc(100vh - 60px);
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin: 10px 10px 10px 10px;
+}
+section#expcon .expcontent{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 0;
+    margin: 5px 5px 5px 5px;
+    animation: ltr 1s ease; 
+}
+section#expcon h1{
+    position: absolute;
+    top: 17rem;
+}
+section#expcon p{
+    position: absolute;
+    top: 20rem;
+    font-size: medium;
+}
+/* ABOUT ME -------------------------------------------------------------------------------------------------------------------*/
+.button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    top: 30%;
+    left: 30%;
+    animation: up 2s ease;
+}
+.abtbody{
+    min-height: calc(100vh - 60px - 50px);
+}
+#fb, #github, #twit, #inst{
+    font-size: 1em;
+    background-color: #18191f;
+    color: #fff;
+    box-shadow: 2px 2px 2px blue, 10px 1px 12px #fff, 2px 2px 10px #fff,2px 2px 3px #fff,
+    inset 2px 2px 10px blue, inset 2px 2px 10px #fff, inset 2px 2px 10px #fff;
+    border-radius: 29px;
+    padding: 1px 4px;
+    margin: 0 20px;
+    animation: animate 2s linear infinite;
+    text-shadow: 0 0 50px red, 0 0 100px red, 0 0 150px red, 0 0 200px red;
+}
+#fb{
+    animation-delay: 0.2s;
+}
+#github{
+    animation-delay: 0.4s;
+}
+#twit{
+    animation-delay: 0.6s;
+}
+#inst{
+    animation-delay: 0.8s;
+}
+#Email{
+    padding: 5px 5px 5px 5px;
+}
+.bottom{
+    background: #18191f;
+    background-size: cover;
+    height: 100px;
+}
+footer{
+    top: 100%;
+    height: 500px;
+}
+.testimony1{
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    top: 80%;
+    background-color: black;
+    padding: 50px 200px 50px 170px;
+    text-align: center;
+    flex-direction: column;
+}
+.img1{
+    border-radius: 50%;
+    padding-bottom: 5px;
+}
+.testimony1 h1, p{
+    position: relative;
+    top: 10%;
+    right: 0;
+}
+.testimony2{
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    top: 140%;
+    background-color: black;
+    padding: 50px 200px 50px 170px;
+    text-align: center;
+    flex-direction: column;
+}
+.img2{
+    border-radius: 50%;
+    padding-bottom: 5px;
+}
+.testimony2 h1, p{
+    position: relative;
+    top: 10%;
+    right: 0;
+}
+.testimony3{
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    top: 205%;
+    background-color: black;
+    padding: 50px 200px 50px 170px;
+    text-align: center;
+    flex-direction: column;
+}
+.img3{
+    border-radius: 50%;
+    padding-bottom: 5px;
+}
+.testimony3 h1, p{
+    position: relative;
+    top: 10%;
+    right: 0;
+}
+/*TABS --------------------------------------------------------------------------------------------------------------------------------------*/
+@media(max-width: 992px){
+    .nvgtnbr .link,
+    .nvgtnbr .action {
+        display: none;
+    }
+    .nvgtnbr .logo{
+        display: block;
+    }
+    .dropdown{
+        display: block;
+    }
+    section#rescon .content{
+        position: absolute;
+        text-align: center;
+        right: 15%;
+        top: 50%;
+    }
+    section#rescon h1{
+        position: absolute;
+        font-weight: bold;
+        top: 70%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+    section#rescon p{
+        position: absolute;
+        font-weight: bold;
+        top: 75%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    } 
+    section#expcon .expcontent{
+        position: absolute;
+        top: 25rem;
+    
+    }
+    section#expcon h1{
+        position: absolute;
+        top: 32rem;
+    }
+    section#expcon p{
+        position: absolute;
+        top: 35rem;
+        font-size: medium;
+    
+    }
+    .button{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        line-height: 80px;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        top: 50%;
+        left: 35%;
+        
+    }
+}
+/*MOBILE DEV ------------------------------------------------------------------------------------------------------------------------*/
+@media(max-width: 576px){
+    .dropdown{
+        left: 2rem;
+        width: unset;
+    }
+    .nvgtnbr .logo{
+        display: block;
+    }
+    section#rescon .content{
+        top: 40%;
+    }
+    section#rescon h1{
+        top: 68%;
+    }
+    section#rescon p{
+        top: 75%;
+    }
+    .edrcon1 .bcp{
+        top: 20%;
+    }
+    .edrcon1 h1{
+        top: 110%;    
+    }
+    .edrcon1 p{
+        top: 130%;
+    }
+    .edrcon2 .sccp{
+        top: 15%;
+    }
+    .edrcon2 h1{
+        top: 190%;
+    }
+    .edrcon2 p{
+        top: 205%;
+    }
+    section#expcon .expcontent{
+        top: 65%;
+        left: -5%;
+    }
+    .testimony1{
+        top: 140%;
+    }
+    .testimony2{
+        top: 239%;
+    }
+    .testimony3{
+        top: 385%;
+    }
+}
+/*KEY FRAMES -------------------------------------------------------------------------------------------------------------------------*/
+@keyframes animate{
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+@keyframes ltr{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes up{
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+
+
