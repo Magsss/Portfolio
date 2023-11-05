@@ -394,12 +394,14 @@ footer{
     .dropdown{
         left: 2rem;
         width: unset;
+        padding-bottom: 30vh;
     }
     .nvgtnbr .logo{
         display: block;
     }
     section#rescon .content{
         top: 40%;
+        right: 13%;
     }
     section#rescon h1{
         top: 68%;
